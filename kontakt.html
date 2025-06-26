@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stavební firma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ing. Pavel Polák s.r.o.</h1>
+        <h3>opravy a Rekonstrukce památkových objektů</h3>
+    </header>
+    <nav>
+        <a href="index.html">Na úvod</a>
+        <a href="sluzby.html">Naše Služby</a>
+        <a href="referencni_stavby.html">Referenční stavby</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <div class="container">
+        <h2>Kontakt</h2>
+        <div class="kontakt">
+            Ing.Pavel Polák s.r.o.<br>
+            Hluboš 48<br>
+            262 22 Hluboš<br>
+            IČ: 27624161<br>
+            DIČ: CZ27624161<br>
+            tel. : 777 755 137<br>
+            email: nachalupe@tiscali.cz<br>
+        </div>
+
+        <h2>Napište nám</h2>
+        <form action="contact.php" method="POST">
+            <label for="name">Firma:</label>
+            <input type="text" id="firma" name="firma" required>
+
+            <label for="name">Příjemní, jméno:</label>
+            <input type="text" id="jmeno" name="jmeno" required>
+
+            <label for="email">Adresa:</label>
+            <input type="email" id="adresa" name="adresa" required>
+            
+            <label for="email">Telefon</label>
+            <input type="email" id="telefon" name="telefon" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Zpráva:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button class="formular" type="submit">Odeslat</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2025 Firma Polák. Všechna práva vyhrazena.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom, #fcffe3, #ffffa3);
+	background-attachment: fixed;
+	
+	font-size: 120%; /* Zvýší velikost písma */
+	zoom: 1.2; /* Zvětší celou stránku */
+}
+header {
+	background-image: url(obrazky/chotilsko.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	background: #444;
+}
+nav a {
+	color: white;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+nav a:hover {
+	background: #555;
+}
+.container {
+	max-width: 1100px;
+	margin: 20px auto;
+	padding: 20px;
+	background: white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+ul li{
+	line-height: 40px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+}
+
+label {
+	margin-top: 5px;
+}
+
+input, textarea {
+	padding: 10px;
+	width: 100%;
+	margin-top: 5px;
+}
+
+button {
+	margin-top: 15px;
+	padding: 10px;
+	background: #444;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #555;
+}
+
+
+.obrazky {
+    display: flex;
+    justify-content: center; /* Zarovná obrázky na střed */
+}
+
+.kontakt{
+	line-height: 40px;
+}
+
+.formular{
+	margin-bottom: 50px;
+}
