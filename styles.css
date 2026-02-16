@@ -1,29 +1,32 @@
 .main-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* mezera mezi sloupci */
-    margin: 20px auto;
-    max-width: 1600px; /* můžeš upravit */
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	/* mezera mezi sloupci */
+	margin: 20px auto;
+	max-width: 1600px;
+	/* můžeš upravit */
 }
 
 .side-gallery {
 	margin-top: 20px;
-    width: 200px; /* šířka sloupce */
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
+	width: 200px;
+	/* šířka sloupce */
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	text-align: center;
 }
 
 .side-gallery img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 .side-gallery p {
-    margin: 5px 0 0;
-    font-size: 90%;
+	margin: 5px 0 0;
+	font-size: 90%;
 	font-style: italic;
 }
 
@@ -33,24 +36,24 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15px;
 	max-width: 900px;
-	margin: 20px auto 0; /* small gap from text above */
+	margin: 20px auto 0;
+	/* small gap from text above */
 }
-.gallery-grid figure{
+
+.gallery-grid figure {
 	margin: 0;
 }
+
 .gallery-grid img {
 	width: 100%;
-	height: auto; /* zachovat poměr stran, neřezej */
+	height: auto;
+	/* zachovat poměr stran, neřezej */
 	border-radius: 8px;
-	box-shadow: 0 0 6px rgba(0,0,0,0.18);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
 	display: block;
 }
-.gallery-grid .span-2 {
-	grid-column: 1 / -1;
-	justify-self: center;
-	width: 60%;
-}
-.gallery-grid figcaption{
+
+.gallery-grid figcaption {
 	text-align: center;
 	margin-top: 8px;
 	margin-bottom: 20px;
@@ -58,22 +61,35 @@
 	font-size: 95%;
 }
 
-.gallery-grid a{
+.gallery-grid a {
 	display: block;
 	text-decoration: none;
 	color: inherit;
 }
-.gallery-grid a:hover img{
+
+.gallery-grid a:hover img {
 	transform: scale(1.02);
 	transition: transform 150ms ease-in-out;
 }
 
-@media (max-width: 700px) {
-	.gallery-grid {
-		grid-template-columns: 1fr;
+@media (max-width: 1100px) {
+
+	/* Skryjeme jen ty boční kontejnery */
+	#vlevo,
+	#vpravo {
+		display: none;
 	}
-	.gallery-grid .span-2 {
-		width: 100%;
+
+	/* Zajistíme, aby hlavní blok s textem zabral celou šířku */
+	.container {
+		width: 95% !important;
+		max-width: none !important;
+		margin: 10px auto !important;
+	}
+
+	/* Zrušíme zoom, který by to mohl celé vyosit */
+	body {
+		zoom: 1.0 !important;
 	}
 }
 
@@ -84,10 +100,13 @@ body {
 	padding: 0;
 	background: linear-gradient(to bottom, #fcffe3, #ffffa3);
 	background-attachment: fixed;
-	
-	font-size: 120%; /* Zvýší velikost písma */
-	zoom: 1.2; /* Zvětší celou stránku */
+
+	font-size: 120%;
+	/* Zvýší velikost písma */
+	zoom: 1.2;
+	/* Zvětší celou stránku */
 }
+
 header {
 	background-image: url(obrazky/pozadi1.png);
 	background-repeat: no-repeat;
@@ -98,19 +117,23 @@ header {
 	padding: 20px;
 	text-align: center;
 }
+
 nav {
 	display: flex;
 	justify-content: center;
 	background: #444;
 }
+
 nav a {
 	color: white;
 	padding: 15px 20px;
 	text-decoration: none;
 }
+
 nav a:hover {
 	background: #555;
 }
+
 .container {
 	width: 1100px;
 	margin: 20px auto;
@@ -118,59 +141,18 @@ nav a:hover {
 	background: white;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-footer {
-	background: #333;
-	color: white;
-	text-align: center;
-	padding: 10px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-}
 
-ul li{
+ul li {
 	line-height: 40px;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
-	max-width: 400px;
-}
-
-label {
-	margin-top: 5px;
-}
-
-input, textarea {
-	padding: 10px;
-	width: 100%;
-	margin-top: 5px;
-}
-
-button {
-	margin-top: 15px;
-	padding: 10px;
-	background: #444;
-	color: white;
-	border: none;
-	cursor: pointer;
-}
-
-button:hover {
-	background: #555;
 }
 
 
 .obrazky {
-    display: flex;
-    justify-content: center; /* Zarovná obrázky na střed */
+	display: flex;
+	justify-content: center;
+	/* Zarovná obrázky na střed */
 }
 
-.kontakt{
+.kontakt {
 	line-height: 40px;
-}
-
-.formular{
-	margin-bottom: 50px;
 }
